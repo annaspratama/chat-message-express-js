@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Chat Message Group</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <nav class="navbar chat-nav" data-bs-theme="dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1"><h2 class="text-light"><i class="fas fa-comments"></i> Chat Message</h2></span>
+          <button class="btn btn-danger"><i class="fas fa-arrow-right"> </i> Exit Group</button>
+        </div>
+    </nav>
+
+    <div class="row vh-100">
+        <div class="col-3">
+            <div class="chat-sidebar">
+                <h4 class="mt-1"><i class="fas fa-circle"></i> Group</h4>
+                <h5 id="group-name">Manchester United</h5>
+                <h4 class="mt-5"><i class="fas fa-users"></i> Users</h4>
+                <ul id="users">
+                  <li>Brad</li>
+                  <li>John</li>
+                  <li>Mary</li>
+                  <li>Paul</li>
+                  <li>Mike</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="chat-container">
+                <div class="chat-messages">
+					<div class="message">
+						<p class="meta">Brad <span>9:12pm</span></p>
+						<p class="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+							repudiandae.
+						</p>
+					</div>
+					<div class="message-reply">
+						<p class="meta">Mary <span>9:15pm</span></p>
+						<p class="text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+							repudiandae.
+						</p>
+					</div>
+                </div>
+            </div>
+            <div class="chat-form-container">
+                <form action="#" method="post">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="chat" required>
+                        <span type="submit" class="input-group-text btn btn-success"><i class="fas fa-envelope"></i> Send</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

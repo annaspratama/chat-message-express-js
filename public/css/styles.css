@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+	--dark-color-a: #3a53f8;
+	--dark-color-b: #4a63ff;
+	--light-color: #e6e9ff;
+    --white-color: #ffffff;
+	--dark-color: #868bab;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--light-color);
+}
+
+ul {
+	list-style: none;
+    padding: 0px;
+}
+
+ul li {
+    margin-top: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.form-signin {
+    max-width: 600px;
+}
+
+.form-signin .card {
+    margin-top: 150px;
+    width: 500px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--dark-color);
+	border-radius: 5px;
+    width: 500px;
+}
+
+.chat-messages .message-reply {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--dark-color-b);
+	border-radius: 5px;
+    width: 500px;
+    margin-left: auto;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--white-color);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message-reply .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--white-color);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: var(--light-color);
+}
+
+.chat-messages .message-reply .meta span {
+	color: var(--light-color);
+}
+
+.message .text {
+	color: var(--white-color);
+}
+
+.message-reply .text {
+	color: var(--white-color);
+}
+
+.chat-nav {
+    background-color: var(--dark-color-a);
+}
+
+.chat-sidebar {
+	background-color: var(--dark-color-b);
+	color: #fff;
+	padding: 50px 50px 30px 50px;
+    /* margin-right: 80px; */
+	height: 100vh;
+}
+
+.chat-container {
+    height: 80%;
+}
+
+.chat-form-container {
+    height: 50px;
+	padding: 20px 30px 20px 0px;
+}
