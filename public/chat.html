@@ -12,7 +12,7 @@
     <nav class="navbar chat-nav" data-bs-theme="dark">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1"><h2 class="text-light"><i class="fas fa-comments"></i> Chat Message</h2></span>
-          <button class="btn btn-danger"><i class="fas fa-arrow-right"> </i> Exit Group</button>
+          <a class="btn btn-danger" id="exit-group" href="index.html"><i class="fas fa-arrow-right"> </i> Exit Group</a>
         </div>
     </nav>
 
@@ -20,7 +20,7 @@
         <div class="col-3">
             <div class="chat-sidebar">
                 <h4 class="mt-1"><i class="fas fa-circle"></i> Group</h4>
-                <h5 id="group-name">Manchester United</h5>
+                <span class="border border-danger"><h5 id="group-name">Manchester United</h5></span>
                 <h4 class="mt-5"><i class="fas fa-users"></i> Users</h4>
                 <ul id="users">
                   <li>Brad</li>
@@ -51,9 +51,9 @@
                 </div>
             </div>
             <div class="chat-form-container">
-                <form action="#" method="post">
+                <form action="#" method="post" id="chat-form">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="chat" required>
+                        <input type="text" class="form-control" name="msg" id="msg" required>
                         <span type="submit" class="input-group-text btn btn-success"><i class="fas fa-envelope"></i> Send</span>
                     </div>
                 </form>
@@ -61,6 +61,8 @@
         </div>
     </div>
 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/client.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

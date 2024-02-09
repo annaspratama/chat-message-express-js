@@ -44,7 +44,8 @@ a {
 }
 
 .form-signin {
-    max-width: 600px;
+    max-width: 500px;
+	/* text-align: center; */
 }
 
 .form-signin .card {
