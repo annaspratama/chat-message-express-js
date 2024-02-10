@@ -20,21 +20,15 @@
         <div class="col-3">
             <div class="chat-sidebar">
                 <h4 class="mt-1"><i class="fas fa-circle"></i> Group</h4>
-                <span class="border border-danger"><h5 id="group-name">Manchester United</h5></span>
+                <h5 id="group-name"></h5>
                 <h4 class="mt-5"><i class="fas fa-users"></i> Users</h4>
-                <ul id="users">
-                  <li>Brad</li>
-                  <li>John</li>
-                  <li>Mary</li>
-                  <li>Paul</li>
-                  <li>Mike</li>
-                </ul>
+                <ul id="users"></ul>
             </div>
         </div>
         <div class="col-9">
             <div class="chat-container">
                 <div class="chat-messages">
-					<div class="message">
+					<!-- <div class="message">
 						<p class="meta">Brad <span>9:12pm</span></p>
 						<p class="text">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -47,20 +41,25 @@
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
 							repudiandae.
 						</p>
-					</div>
+					</div> -->
                 </div>
             </div>
             <div class="chat-form-container">
                 <form action="#" method="post" id="chat-form">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" name="msg" id="msg" required>
-                        <span type="submit" class="input-group-text btn btn-success"><i class="fas fa-envelope"></i> Send</span>
+                        <span type="submit" class="input-group-text btn btn-success"><i class="fas fa-paper-plane"></i> Send</span>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/client.js"></script>
     <script src="js/bootstrap.min.js"></script>
