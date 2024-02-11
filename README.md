@@ -1,29 +1,18 @@
-# README #
+# Chat Message #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This is a mini project that built with Node Express JS, Socket IO and Redis.
 
-### What is this repository for? ###
+### Demo ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+You can try the demonstration in [https://chat-message.annaspratama.my.id](https://chat-message.annaspratama.my.id).
 
-### How do I get set up? ###
+### Usage ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Clone this repo.
+* Run command `npm install`.
+* Run server `npm run dev`.
+* Open browser and type `http://localhost:3000`.
 
-### Contribution guidelines ###
+### Contribution ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* You can contribute to this project by contact me on mail *annaspratama@icloud.com*.
