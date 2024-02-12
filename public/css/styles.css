@@ -133,3 +133,14 @@ a {
     height: 50px;
 	padding: 20px 30px 50px 0px;
 }
+
+.feedback {
+	font-style: italic;
+	font-size: 15px;
+	padding: 0px 16px 16px 16px;
+	color: #2d2d2d;
+	padding: 10px;
+	margin-bottom: 15px;
+	text-align: center;
+	border-radius: 5px;
+  }

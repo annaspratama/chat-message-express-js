@@ -68,6 +68,18 @@ socketio.on("connection", socket => {
 
         if (user) socketio.to(user.group).emit("message", formatMessage(botName, `${user.username} has left the chat.`));
     });
+
+    // listen for a feedback for another user is tyiping.
+    socket.on("feedback", (data) => {
+        const user = getCurrentUser(socket.id);
+        socket.broadcast.to(user.group).except(socket.id).emit("feedback", data);
+    });
+
+    // listen for a feedback disappear for another user is tyiping.
+    socket.on("feedback-disappear", (data) => {
+        const user = getCurrentUser(socket.id);
+        socket.broadcast.to(user.group).except(socket.id).emit("feedback-disappear", data);
+    });
 });
 
 server.listen(port, () => {console.info(`Server is running on port ${port}.`)});
