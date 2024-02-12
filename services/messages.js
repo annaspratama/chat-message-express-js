@@ -1,4 +1,4 @@
-import moment from "moment";
+import moment from "moment-timezone";
 
 /**
  * Format for message.
@@ -11,7 +11,7 @@ function formatMessage(username, text, isOwnMsg=false) {
     isOwnMsg,
     username,
     text,
-    time: moment().format("h:mm a")
+    time: moment().tz("Asia/Jakarta").format("h:mm a")
   };
 }
 
