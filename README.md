@@ -12,7 +12,3 @@ You can try the demonstration in [https://chat-message.annaspratama.my.id](https
 * Run command `npm install`.
 * Run server `npm run dev`.
 * Open browser and type `http://localhost:3000`.
-
-### Contribution ###
-
-* You can contribute to this project by contact me on mail *annaspratama@icloud.com*.
